@@ -1,81 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Прайс-лист косметологических услуг</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прайс-лист косметологических услуг</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">Прайс-лист</h1>
-      <span class="text-pink-100">Косметологические услуги</span>
-    </div>
-  </header>
 
+<header class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">Прайс-лист</h1>
+    <span class="text-pink-100">Косметологические услуги</span>
+  </div>
+</header>
 
-  <!-- Main -->
-  <main class="max-w-6xl mx-auto px-6 py-10">
-    <h2 class="text-3xl font-semibold mb-8 text-gray-800 text-center">Стоимость процедур</h2>
+<main class="max-w-6xl mx-auto px-6 py-10">
+  <h2 class="text-3xl font-semibold mb-8 text-gray-800 text-center">Стоимость процедур</h2>
 
-    <div class="overflow-hidden rounded-2xl shadow-lg bg-white border border-gray-200">
-      <table class="w-full text-left border-collapse">
-        <thead class="bg-pink-100 text-gray-800">
-          <tr>
-            <th class="p-4 text-sm font-semibold uppercase tracking-wider">НАИМЕНОВАНИЕ УСЛУГИ</th>
-            <th class="p-4 text-sm font-semibold uppercase tracking-wider text-right">Стоимость, руб</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr class="hover:bg-pink-50 transition">
-            <td class="p-4">Консультация (косметология) до 30 мин</td>
-            <td class="p-4 text-right font-medium">3500</td>
-          </tr>
-          <tr class="hover:bg-pink-50 transition">
-            <td class="p-4">Консультация с проведением процедуры</td>
-            <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
-          </tr>
-          <tr class="hover:bg-pink-50 transition">
-            <td class="p-4">Контрольный осмотр до 30 мин</td>
-            <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
-          </tr>
+  <div class="overflow-hidden rounded-2xl shadow-lg bg-white border border-gray-200">
+    <table class="w-full text-left border-collapse">
+      <thead class="bg-pink-100 text-gray-800">
+        <tr>
+          <th class="p-4 text-sm font-semibold uppercase tracking-wider">НАИМЕНОВАНИЕ УСЛУГИ</th>
+          <th class="p-4 text-sm font-semibold uppercase tracking-wider text-right">Стоимость, руб</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
 
-          <!-- Section: Botulinotherapy -->
-          <tr class="bg-gray-100">
-            <td colspan="2" class="p-4 font-bold text-pink-700">БОТУЛИНОТЕРАПИЯ</td>
-          </tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Диспорт 1ЕД</td><td class="p-4 text-right">165</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Миотокс 1ЕД</td><td class="p-4 text-right">390</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Релатокс 1ЕД</td><td class="p-4 text-right">440</td></tr>
-          <tr><td colspan="2" class="p-4 italic text-gray-600">Другие, сертифицированные в РФ, токсины также есть в наличии.</td></tr>
+        <!-- Konsultacje -->
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Консультация (косметология) до 30 мин</td>
+          <td class="p-4 text-right font-medium">3500</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Консультация с проведением процедуры</td>
+          <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Контрольный осмотр до 30 мин</td>
+          <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
+        </tr>
 
-          <!-- Section: Контурная пластика -->
-          <tr class="bg-gray-100">
-            <td colspan="2" class="p-4 font-bold text-pink-700">КОНТУРНАЯ ПЛАСТИКА НАПОЛНИТЕЛЯМИ</td>
-          </tr>
-          <tr><td colspan="2" class="p-4 italic text-gray-600">Контурная пластика, губы:</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Juvederm Ultra Smile 0,6 мл</td><td class="p-4 text-right">26400</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Shape 0,6 мл</td><td class="p-4 text-right">20000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Contour 0,6 мл</td><td class="p-4 text-right">18000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Teosyal RHA Kiss 0,7 мл</td><td class="p-4 text-right">30000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage S 0,8 мл</td><td class="p-4 text-right">20000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage Special Lips 1,0 мл</td><td class="p-4 text-right">30000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage M 1,0 мл</td><td class="p-4 text-right">26000</td></tr>
-          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage L 1,0 мл</td><td class="p-4 text-right">27500</td></tr>
+        <!-- Botulinoterapia -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">БОТУЛИНОТЕРАПИЯ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Диспорт 1ЕД</td>
+          <td class="p-4 text-right">165</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Миотокс 1ЕД</td>
+          <td class="p-4 text-right">390</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition">
+          <td class="p-4">Релатокс 1ЕД</td>
+          <td class="p-4 text-right">440</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="p-4 italic text-gray-600">Другие, сертифицированные в РФ, токсины также есть в наличии.</td>
+        </tr>
 
-          <!-- Kolejne секции można дописать в таком же формате -->
-        </tbody>
-      </table>
-    </div>
-  </main>
+        <!-- Konturplastyka -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">КОНТУРНАЯ ПЛАСТИКА НАПОЛНИТЕЛЯМИ</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="p-4 italic text-gray-600">Контурная пластика, губы:</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Juvederm Ultra Smile 0,6 мл</td><td class="p-4 text-right">26400</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Shape 0,6 мл</td><td class="p-4 text-right">20000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Contour 0,6 мл</td><td class="p-4 text-right">18000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Teosyal RHA Kiss 0,7 мл</td><td class="p-4 text-right">30000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage S 0,8 мл</td><td class="p-4 text-right">20000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage Special Lips 1,0 мл</td><td class="p-4 text-right">30000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage M 1,0 мл</td><td class="p-4 text-right">26000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage L 1,0 мл</td><td class="p-4 text-right">27500</td></tr>
 
-  <!-- Footer -->
-  <footer class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-6 text-center text-white text-sm">
-      © 2025 Косметология. Все права защищены.
-    </div>
-  </footer>
+        <tr><td colspan="2" class="p-4 italic text-gray-600">Контурная пластика носогубные складки:</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage M 1,0 мл</td><td class="p-4 text-right">26000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage L 1,0 мл</td><td class="p-4 text-right">27500</td></tr>
+
+        <tr><td colspan="2" class="p-4 italic text-gray-600">Бланшинг(заполнение) заломов(статических морщин):</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Soft 1,0 мл</td><td class="p-4 text-right">26400</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Balance 1,0 мл</td><td class="p-4 text-right">26400</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Repart PG</td><td class="p-4 text-right">—</td></tr>
+
+        <!-- Konturplastyka: twarz dolna i kości policzkowe -->
+        <tr><td colspan="2" class="p-4 italic text-gray-600">Контурная пластика скулы, подбородок, углы нижней челюсти:</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage XL 1,0 мл</td><td class="p-4 text-right">28600</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Radiesse LIDO 1,5 мл</td><td class="p-4 text-right">38000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Radiesse 3,0 мл</td><td class="p-4 text-right">54000</td></tr>
+
+        <!-- Tutaj trzeba będzie dodać wszystkie kolejne sekcje: Коллагеностимуляция, Биоревитализация, NCTF, Revi, Коллост, Plinest, Экзосомы, НИТИ APTOS, ДРУГОЕ, IPL Candela Nordlys, Morpheus8 itd. -->
+<!-- Коллагеностимуляция -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">КОЛЛАГЕНОСТИМУЛЯЦИЯ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Profhilo 2 мл</td><td class="p-4 text-right">25000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Ial-system 1,5 мл</td><td class="p-4 text-right">20000</td></tr>
+
+        <!-- Биоревитализация -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">БИОРЕВИТАЛИЗАЦИЯ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Restylane Vital 1 мл</td><td class="p-4 text-right">15000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Juvederm Hydrate 1 мл</td><td class="p-4 text-right">16000</td></tr>
+
+        <!-- NCTF -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">NCTF</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">NCTF 135HA 1 мл</td><td class="p-4 text-right">14000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">NCTF 135HA 2 мл</td><td class="p-4 text-right">26000</td></tr>
+
+        <!-- Revi -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">REVI</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Revi Style 1 мл</td><td class="p-4 text-right">21000</td></tr>
+
+        <!-- Коллост -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">КОЛЛОСТ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Collost 2 мл</td><td class="p-4 text-right">12000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Collost 4 мл</td><td class="p-4 text-right">20000</td></tr>
+
+        <!-- Plinest -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">PLINEST</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Plinest 2 мл</td><td class="p-4 text-right">14000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Plinest 4 мл</td><td class="p-4 text-right">25000</td></tr>
+
+        <!-- Экзосомы -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">ЭКЗОСОМЫ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Exosomes Face 2 мл</td><td class="p-4 text-right">35000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Exosomes Neck 2 мл</td><td class="p-4 text-right">40000</td></tr>
+
+        <!-- НИТИ APTOS -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">НИТИ APTOS</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">APTOS Excellence Visage 10 нитей</td><td class="p-4 text-right">50000</td></tr>
+
+        <!-- ДРУГОЕ -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">ДРУГОЕ</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Массаж лица 60 мин</td><td class="p-4 text-right">4500</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Микродермабразия 45 мин</td><td class="p-4 text-right">5500</td></tr>
+
+        <!-- IPL Candela Nordlys -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">IPL CANDELA NORDLYS</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">IPL Лицо</td><td class="p-4 text-right">8000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">IPL Шея</td><td class="p-4 text-right">9000</td></tr>
+
+        <!-- Morpheus8 -->
+        <tr class="bg-gray-100">
+          <td colspan="2" class="p-4 font-bold text-pink-700">MORPHEUS8</td>
+        </tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Morpheus8 Лицо</td><td class="p-4 text-right">35000</td></tr>
+        <tr class="hover:bg-pink-50 transition"><td class="p-4">Morpheus8 Лицо + Шея</td><td class="p-4 text-right">45000</td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md mt-10">
+  <div class="max-w-6xl mx-auto px-6 py-6 text-center text-white text-sm">
+    © 2025 Косметология. Все права защищены.
+  </div>
+</footer>
+
 </body>
 </html>
