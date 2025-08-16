@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прайс-лист косметологических услуг</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">Прайс-лист</h1>
+      <span class="text-pink-100">Косметологические услуги</span>
+    </div>
+  </header>
+
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-semibold mb-8 text-gray-800 text-center">Стоимость процедур</h2>
+
+    <div class="overflow-hidden rounded-2xl shadow-lg bg-white border border-gray-200">
+      <table class="w-full text-left border-collapse">
+        <thead class="bg-pink-100 text-gray-800">
+          <tr>
+            <th class="p-4 text-sm font-semibold uppercase tracking-wider">НАИМЕНОВАНИЕ УСЛУГИ</th>
+            <th class="p-4 text-sm font-semibold uppercase tracking-wider text-right">Стоимость, руб</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr class="hover:bg-pink-50 transition">
+            <td class="p-4">Консультация (косметология) до 30 мин</td>
+            <td class="p-4 text-right font-medium">3500</td>
+          </tr>
+          <tr class="hover:bg-pink-50 transition">
+            <td class="p-4">Консультация с проведением процедуры</td>
+            <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
+          </tr>
+          <tr class="hover:bg-pink-50 transition">
+            <td class="p-4">Контрольный осмотр до 30 мин</td>
+            <td class="p-4 text-right font-medium text-green-600">бесплатно</td>
+          </tr>
+
+          <!-- Section: Botulinotherapy -->
+          <tr class="bg-gray-100">
+            <td colspan="2" class="p-4 font-bold text-pink-700">БОТУЛИНОТЕРАПИЯ</td>
+          </tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Диспорт 1ЕД</td><td class="p-4 text-right">165</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Миотокс 1ЕД</td><td class="p-4 text-right">390</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Релатокс 1ЕД</td><td class="p-4 text-right">440</td></tr>
+          <tr><td colspan="2" class="p-4 italic text-gray-600">Другие, сертифицированные в РФ, токсины также есть в наличии.</td></tr>
+
+          <!-- Section: Контурная пластика -->
+          <tr class="bg-gray-100">
+            <td colspan="2" class="p-4 font-bold text-pink-700">КОНТУРНАЯ ПЛАСТИКА НАПОЛНИТЕЛЯМИ</td>
+          </tr>
+          <tr><td colspan="2" class="p-4 italic text-gray-600">Контурная пластика, губы:</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Juvederm Ultra Smile 0,6 мл</td><td class="p-4 text-right">26400</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Shape 0,6 мл</td><td class="p-4 text-right">20000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Belotero Contour 0,6 мл</td><td class="p-4 text-right">18000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Teosyal RHA Kiss 0,7 мл</td><td class="p-4 text-right">30000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage S 0,8 мл</td><td class="p-4 text-right">20000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage Special Lips 1,0 мл</td><td class="p-4 text-right">30000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage M 1,0 мл</td><td class="p-4 text-right">26000</td></tr>
+          <tr class="hover:bg-pink-50 transition"><td class="p-4">Stylage L 1,0 мл</td><td class="p-4 text-right">27500</td></tr>
+
+          <!-- Kolejne секции można дописать в таком же формате -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-6 text-center text-white text-sm">
+      © 2025 Косметология. Все права защищены.
+    </div>
+  </footer>
+</body>
+</html>
