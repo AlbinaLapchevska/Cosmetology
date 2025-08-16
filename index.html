@@ -9,22 +9,50 @@
 <body class="bg-gray-50 text-gray-900 font-sans">
 
 <header class="bg-gradient-to-r from-pink-500 to-rose-400 shadow-md sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-white">Прайс-лист</h1>
-    <span class="text-pink-100">Косметологические услуги</span>
-  </div>
+<div class="max-w-6xl mx-auto px-6 py-2 flex justify-center items-center relative">
+  <h1 class="text-2xl font-bold text-white text-center">Прайс-лист Екатерина Зонова</h1>
 
-  <nav>
-  <ul class="flex space-x-6 text-white font-medium">
-    <li><a href="#botulinotherapy" class="hover:text-pink-200 transition">Ботулинотерапия</a></li>
-    <li><a href="#contour" class="hover:text-pink-200 transition">Контурная пластика наполнителями</a></li>
-    <li><a href="#collagen" class="hover:text-pink-200 transition">Коллагеностимуляция</a></li>
-    <li><a href="#aptos" class="hover:text-pink-200 transition">Нити APTOS</a></li>
-    <li><a href="#other" class="hover:text-pink-200 transition">Другое</a></li>
-  </ul>
-</nav>
-  
+  <!-- Hamburger -->
+  <button id="menu-btn" class="sm:hidden absolute right-6 text-white focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+</div>
+
+
+  <!-- Menu -->
+   <nav id="menu" class="hidden sm:flex sm:justify-center sm:space-x-6 bg-gradient-to-r from-pink-500 to-rose-400">
+    <ul class="flex flex-col sm:flex-row sm:space-x-6 text-white font-medium p-4 sm:p-0 sm:py-2">
+      <li><a href="#botulinotherapy" class="hover:text-pink-200 transition py-1 sm:py-1 block">Ботулинотерапия</a></li>
+      <li><a href="#contour" class="hover:text-pink-200 transition py-1 sm:py-1 block">Контурная пластика наполнителями</a></li>
+      <li><a href="#collagen" class="hover:text-pink-200 transition py-1 sm:py-1 block">Коллагеностимуляция</a></li>
+      <li><a href="#aptos" class="hover:text-pink-200 transition py-1 sm:py-1 block">Нити APTOS</a></li>
+      <li><a href="#other" class="hover:text-pink-200 transition py-1 sm:py-1 block">Другое</a></li>
+    </ul>
+  </nav>
 </header>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const links = menu.querySelectorAll('a');
+
+// Toggle menu on hamburger click
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+// Close menu when a link is clicked
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    if (!menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+    }
+  });
+});
+</script>
 
 <main class="max-w-6xl mx-auto px-6 py-10">
   <h2 class="text-3xl font-semibold mb-8 text-gray-800 text-center">Стоимость процедур</h2>
